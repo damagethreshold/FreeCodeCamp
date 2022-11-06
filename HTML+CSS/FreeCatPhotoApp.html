@@ -1,4 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CatPhotoApp</title>
+    </head>
     <body>
         <main>
             <h1>CatPhotoApp</h1>
@@ -33,9 +38,24 @@
             <section>
                 <h2>Cat Form</h2>
                 <form action="https://freecatphotoapp.com/submit-cat-photo">
-                <input type="text" name="catphotourl" placeholder="cat photo URL">
+                <fieldset>
+                <legend>Is your cat an indoor or outdoor cat?</legend>   
+                <label><input checked id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+                <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <input checked value="loving" type="checkbox" id="loving"> <label for="loving">Loving</label>
+                    <input value="lazy" type="checkbox" id="lazy"> <label for="lazy">Lazy</label>
+                    <input value="lazy" type="checkbox" id="energetic"> <label for="energetic">Energetic</label>
+                </fieldset>
+                <button type="Submit"> Submit </button>
+                <input required type="text" name="catphotourl" placeholder="cat photo URL">
                 </form>
             </section>            
         </main>
+        <footer>
+            No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+        </footer>
     </body>
 </html> 
