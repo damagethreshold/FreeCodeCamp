@@ -15,5 +15,13 @@
   <li>Sylvester</li>
   <li>Other <strong>cats</strong></li>
 </ol>
-<form action="https://www.freecatphotoapp.com/submit-cat-photo"> <input type="text" placeholder="cat photo URL"> </form>
+<form action="https://www.freecatphotoapp.com/submit-cat-photo">
+  <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+  <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+  <label for="loving"><input checked name="personality" type="checkbox" id="loving"> Loving</label>
+<label for="lazy"><input name="personality" type="checkbox" id="lazy"> Lazy</label>
+<label for="Energetic"><input name="personality" type="checkbox" id="energetic">Energetic</label>                      
+</form>
 </main>
