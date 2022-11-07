@@ -1,27 +1,31 @@
+<!DOCTYPE html>
+<html>
 <h2>CatPhotoApp</h2>
 <main>
-  <p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>
-
-  <a href="#"> <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Three kittens running towards a camera."></a>
-<p>Things cats Love:</p>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+  <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+  <div>
+  <p>Things cats love:</p>
   <ul>
-  <li>Milk</li>
-  <li>Cheese</li>
-  <li><e>Lasagna</e></li>
-</ul>
-<p>Top 3 things cats hate:</p>
-<ol>
-  <li>Garfield</li>
-  <li>Sylvester</li>
-  <li>Other <strong>cats</strong></li>
-</ol>
-<form action="https://www.freecatphotoapp.com/submit-cat-photo">
-  <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
-  <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
-  <input type="text" placeholder="cat photo URL" required>
-  <button type="submit">Submit</button>
-  <label for="loving"><input checked name="personality" type="checkbox" id="loving"> Loving</label>
-<label for="lazy"><input name="personality" type="checkbox" id="lazy"> Lazy</label>
-<label for="Energetic"><input name="personality" type="checkbox" id="energetic">Energetic</label>                      
-</form>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+</div>
+  <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input checked id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+    <label for="loving"><input checked id="loving" type="checkbox" name="personality" value="loving"> Loving</label>
+    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
 </main>
+</html>
